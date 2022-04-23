@@ -6,16 +6,23 @@
 
   <groupId>com.aussiedev81</groupId>
   <artifactId>qr-code-engine</artifactId>
-  <version>1</version>
-
+  <version>0.0.1-SNAPSHOT</version>
   <name>qr-code-engine</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>https://github.com/AussieDev81/qr-code-engine</url>
+  <description>QR Code engine to create QR codes from (and to) your objects</description>
+
+	<developers>
+		<developer>
+			<name>Nathan Snow</name>
+			<email>aussiedev81@gmail.com</email>
+			<url>https://github.com/AussieDev81</url>
+		</developer>
+	</developers>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -28,6 +35,7 @@
   </dependencies>
 
   <build>
+  <finalName>qr-code-engine</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
@@ -51,6 +59,13 @@
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.0.2</version>
+          <configuration>
+                <archive>
+                    <manifest>
+                        <mainClass>com.aussiedev81.App</mainClass>
+                    </manifest>
+                </archive>
+            </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
