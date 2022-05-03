@@ -6,6 +6,8 @@ At this stage there is only 3 functions this library performs, which are:
 1. createQrCode
 2. readQrCodeByPath
 3. readQrCodeByFile
+4. getWorkingDirectory
+5. setWorkingDirectory
 
 The first method is self-explanatory, it takes whatever object you pass to it and creates a QR code version of it for you. 
 By default, the working directory is set to the system's user hom directory (E.g `C:\Users\nate`), but you can change this default directory by setting the following:
@@ -54,3 +56,7 @@ If you run this code you will find the QR code image file saves to your user hom
 The file should contain a QR code like the following, and if you scan it with your QR code scanner you will see it just contains some simple text which reads `Turn this message into a QR code` just as we declared above in our `message` variable.
 
 ![img.png](QRCodeImage.png)
+
+If I have missed some details here (and I surely will), you can try reading the documentation by hovering (sometimes ctrl+ hover) over the class or method names.
+
+Failing that, shoot me an email at [aussiedev81@gmail.com](mailto:aussiedev81@gmail.com?subject=QR%20Code%20Engine "Email me") 

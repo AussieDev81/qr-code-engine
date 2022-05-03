@@ -6,13 +6,13 @@ public class Example {
 
     public static void main(String[] args){
 
-        //A demo message
+        //A demo message as an example
         var message = "Turn this message into a QR code";
 
         //Get an instance of the QREngine (QREngineImpl.java)
         var engine = QREngineFactory.getInstance();
 
-        //The QR code file generated containing our message
+        //The QR code file generated containing our message (this could be any object you choose)
         var qrFile = engine.createQrCode(message);
 
         //We know both objects are Strings
@@ -23,6 +23,8 @@ public class Example {
         System.out.println(engine.readQrCodeByFile(qrFile));
         //Both options return the same object
         System.out.println(byFile.equals(byPath));
+
+        //Change the default save directory
         engine.setWorkingDirectory("my-new-directory");
 
     }
