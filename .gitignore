@@ -40,3 +40,6 @@ build/
 
 ### Log Files ###
 *Log.txt
+
+### Allow Jar ###
+!target/qr-code-engine.jar
