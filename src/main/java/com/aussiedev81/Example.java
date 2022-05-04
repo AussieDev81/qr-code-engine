@@ -24,8 +24,5 @@ public class Example {
         //Both options return the same object
         System.out.println(byFile.equals(byPath));
 
-        //Change the default save directory
-        engine.setWorkingDirectory("my-new-directory");
-
     }
 }

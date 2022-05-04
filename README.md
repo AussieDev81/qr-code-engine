@@ -30,13 +30,13 @@ public class Example {
 
     public static void main(String[] args){
 
-        //A demo message
+        //A demo message as an example
         var message = "Turn this message into a QR code";
 
         //Get an instance of the QREngine (QREngineImpl.java)
         var engine = QREngineFactory.getInstance();
 
-        //The QR code file generated containing our message
+        //The QR code file generated containing our message (this could be any object you choose)
         var qrFile = engine.createQrCode(message);
 
         //We know both objects are Strings
@@ -50,6 +50,12 @@ public class Example {
 
     }
 }
+```
+
+The output for this is
+```ps
+Turn this message into a QR code
+True
 ```
 If you run this code you will find the QR code image file saves to your user home directory (for example `C:\Users\nate`).
 

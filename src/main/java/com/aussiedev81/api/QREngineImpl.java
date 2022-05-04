@@ -11,12 +11,16 @@ import java.nio.file.Path;
 class QREngineImpl implements QREngine {
 
     public static String OUTPUT_DIR = System.getProperty("user.home");
+    private static QRHandler handler;
+
+    public QREngineImpl() {
+        handler = new QRHandler();
+    }
 
     @Override
     public File createQrCode(Object data) {
         try {
-            QRCode qrCode = new QRCode(data);
-            return qrCode.getImageFile();
+            return handler.getImageFile(new QRCode(data));
         } catch (WriterException | IOException e) {
             e.printStackTrace();
         }
@@ -36,7 +40,7 @@ class QREngineImpl implements QREngine {
     @Override
     public Object readQrCodeByFile(File file) {
         try{
-            return new QRCode().readImageFile(file.getPath());
+            return handler.readImageFile(file.getPath());
         } catch (NotFoundException | IOException e){
             return e.getMessage();
         }
