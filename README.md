@@ -1,3 +1,5 @@
+
+[![License](https://img.shields.io/github/license/AussieDev81/qr-code-engine)](https://github.com/AussieDev81/qr-code-engine)
 # QR Code Engine
 ___
 
