@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="com.aussiedev81.api.QREngineFactoryTest" time="0.003" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="com.aussiedev81.api.QREngineFactoryTest" time="0.006" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.2+8-LTS-86"/>
@@ -61,6 +61,5 @@
     <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.aussiedev81.api.QREngineFactoryTest" name="testSingleton" time="0.003"/>
-  <testcase classname="com.aussiedev81.api.QREngineFactoryTest" name="testGetInstance" time="0"/>
+  <testcase classname="com.aussiedev81.api.QREngineFactoryTest" name="testGetInstance" time="0.006"/>
 </testsuite>

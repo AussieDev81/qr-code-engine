@@ -1,21 +1,15 @@
 package com.aussiedev81.api;
 
-import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
-import static org.junit.Assert.*;
+import org.junit.Test;
 
 public class QREngineFactoryTest {
 
     @Test
     public void testGetInstance() {
-        QREngine codeEngine = QREngineFactory.getInstance();
-        assertNotNull(codeEngine);
-        assertEquals(QREngineImpl.class, codeEngine.getClass());
-    }
-
-    @Test
-    public void testSingleton(){
-        var originalInstance = QREngineFactory.getInstance();
-        assertSame(originalInstance, QREngineFactory.getInstance());
+        var engine1 = QREngineFactory.getInstance();
+        var engine2 = QREngineFactory.getInstance();
+        assertEquals(engine1, engine2);
     }
 }

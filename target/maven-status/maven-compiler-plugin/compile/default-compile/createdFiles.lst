@@ -1,5 +1,6 @@
 com\aussiedev81\api\QREngineFactory.class
 com\aussiedev81\Example.class
+com\aussiedev81\api\QRHandler.class
 com\aussiedev81\api\QREngineImpl.class
 com\aussiedev81\model\QRCode.class
 com\aussiedev81\api\QREngine.class
